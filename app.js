@@ -9,13 +9,13 @@ var middleware = require('botkit-middleware-watson')({
   version_date: '2017-05-26'
 });
 
-# If your data center region uses IAM, use this instead of the above auth method
-#var middleware = require('botkit-middleware-watson')({
-#  iam_apikey: YOUR_API_KEY,
-#  url: YOUR_ASSISTANT_URL,
-#  workspace_id: YOUR_WORKSPACE_ID,
-#  version: '2018-07-10',
-#});
+// If your data center region uses IAM, use this instead of the above auth method
+//var middleware = require('botkit-middleware-watson')({
+//  iam_apikey: YOUR_API_KEY,
+//  url: YOUR_ASSISTANT_URL,
+//  workspace_id: YOUR_WORKSPACE_ID,
+//  version: '2018-07-10',
+//});
 
 var TwilioSMSBot = require('botkit-sms');
 var controller = TwilioSMSBot({
